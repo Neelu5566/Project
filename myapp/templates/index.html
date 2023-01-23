@@ -1,0 +1,20 @@
+{% load static %}
+<div>
+  <button id="like-button" onclick="incrementLikes()">Like</button>
+  <button id="dislike-button" onclick="incrementDislikes()">Dislike</button>
+
+</div>
+<div>
+  
+  <p>Likes: {{ count.likes }}</p>
+  <p>Dislikes: {{ count.dislikes }}</p>
+
+
+</div>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <!-- Your HTML code -->
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+</body>
